@@ -1,0 +1,60 @@
+header {
+  background-color: #08a4a7;
+  opacity: 0.8;
+  color: white;
+  padding: 1em;
+}
+
+.navbar {
+  color: #e9ffff;
+  text-decoration: none;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.facebook {
+  color: hsl(189, 74%, 56%);
+  margin-right: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.container {
+  font-size: 20px;
+  padding: 2em;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-image:url(IMAGES/homebackground.jpg);
+  background-color: antiquewhite ;
+  text-align: center;
+}
+
+footer {
+  background-color: #08a4a7;
+  opacity: 0.8;
+  color: #e9ffff;
+  text-align: center;
+  position: fixed;
+  font-weight: bold;
+  bottom: 0;
+  width: 100%;
+  padding: 8px;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+.servicepicsleft{
+  margin-left: 3cm;
+  margin-right: 3cm;
+  text-align:center;
+}

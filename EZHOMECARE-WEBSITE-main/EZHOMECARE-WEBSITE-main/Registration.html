@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <nav>
+          <a class="navbar" href="index.html">Log In</a>
+          <a class="navbar" href="AboutUsNoAccount.html">About Us</a>
+          <a class="navbar" href="ContactUsNoAccount.html">Contact Us</a>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+      <img
+        style="height: 300px"
+        src="IMAGES/ezhomecare logo.png"
+        alt="Company Logo"
+      />
+      <h1>Registration</h1>
+      <form action="#">
+        <span>Full Name</span>
+        <input type="text" placeholder="Enter your name" required />
+        <br />
+        <span class="details">Username</span>
+        <input type="text" placeholder="Enter your username" required />
+        <br />
+        <span class="details">Email</span>
+        <input type="text" placeholder="Enter your email" required />
+        <br />
+        <span class="details">Phone Number</span>
+        <input type="text" placeholder="Enter your number" required />
+        <br />
+        <span class="details">Password</span>
+        <input type="password" placeholder="Enter your password" required />
+        <br />
+        <span class="details">Confirm Password</span>
+        <input type="password" placeholder="Confirm your password" required />
+        <br />
+        <span class="gender-title">Gender</span><br />
+        <input type="radio" name="gender" id="dot-1" />
+        <label for="dot-1">Male</label><br />
+        <input type="radio" name="gender" id="dot-2" />
+        <label for="dot-2">Female</label><br />
+        <input type="radio" name="gender" id="dot-3" />
+        <label for="dot-3">Prefer not to say </label>
+      </form>
+      <div style="padding: 10px">
+        <a href="index.html" class="btn btn-info" role="button">
+          <button style="margin-bottom: 1em" type="submit">Register</button>
+        </a>
+      </div>
+      <br />
+    </div>
+    <footer>
+      <p>Copyright © 2023</p>
+    </footer>
+  </body>
+</html>

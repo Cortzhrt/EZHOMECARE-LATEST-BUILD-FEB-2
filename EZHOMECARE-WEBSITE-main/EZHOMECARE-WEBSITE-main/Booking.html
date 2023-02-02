@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Book Now</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="navbar" href="Home.html">Home</a>
+        <a class="navbar" href="AboutUs.html">About Us</a>
+        <a class="navbar" href="ContactUs.html">Contact Us</a>
+        <a class="navbar" href="index.html">Log Out</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>Book Now</h1>
+      <form>
+        <span>Address:</span>
+        <input
+          type="address"
+          name="name"
+          id="address"
+          placeholder="Write your address here"
+          required
+        />
+        <div>
+          <!-- <---this is the select option--->
+          <span>Service:</span>
+          <select name="service" id="services" required>
+            <option value=""></option>
+            <option value="1">Nanay on the Go</option>
+            <option value="2">The Loyal</option>
+            <option value="3">The Busybee Package</option>
+            <option value="4">The wonder Woman Package</option>
+            <option value="4">The Twin Package</option>
+            <option value="4">TLC (Tender,Love and Care)</option>
+          </select>
+          <!-- <---this is the select option--->
+        </div>
+        <div>
+          <span>Time:</span>
+          <input
+            type="time"
+            name="time"
+            id="time"
+            placeholder="Time"
+            required
+          />
+        </div>
+        <div>
+          <span>Date:</span>
+          <input
+            type="date"
+            name="date"
+            id="date"
+            placeholder="date"
+            required
+          />
+        </div>
+        <div>
+          <span>Phone Number:</span>
+          <input
+            type="tel"
+            name="number"
+            id="number"
+            placeholder="09---------"
+            pattern="09[0-9]{9}"
+            required
+          />
+        </div>
+        <div>
+          <span>Payment Method:</span>
+          <select name="Choose Payment Method" required>
+            <option value="1">Gcash</option>
+            <option value="2">Bank Transfer</option>
+          </select>
+        </div>
+        <a href="BookingSuccessful.html">
+          <button type="button" value="SUBMIT" id="submit">
+            Submit Booking
+          </button>
+        </a>
+        <br /><br /><br />
+      </form>
+    </div>
+  </body>
+  <footer>
+    <p>Copyright © 2023</p>
+  </footer>
+</html>
