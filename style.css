@@ -32,8 +32,8 @@ nav {
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-image:url(IMAGES/homebackground.jpg);
-  background-color: antiquewhite ;
+  background-image: url(IMAGES/homebackground.jpg);
+  background-color: antiquewhite;
   text-align: center;
 }
 
@@ -53,8 +53,8 @@ img:hover {
   opacity: 0.5;
 }
 
-.servicepicsleft{
+.servicepicsleft {
   margin-left: 3cm;
   margin-right: 3cm;
-  text-align:center;
+  text-align: center;
 }
