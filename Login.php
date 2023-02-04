@@ -7,9 +7,9 @@ $password = $_POST['password'];
 $gender = $_POST['gender'];
 
 if (!empty($name) || !empty($username) || !empty($email) || !empty($phone) || !empty($password) || !empty($gender)) {
-    $host = "localhost";
-    $dbUsername = "root";
-    $dbPassword = "";
+    $host = "sql201.epizy.com";
+    $dbUsername = "epiz_33500965";
+    $dbPassword = "eEEUyD4vlXJZ9d";
     $dbname = "epiz_33500965_ezhomecare";
 
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
