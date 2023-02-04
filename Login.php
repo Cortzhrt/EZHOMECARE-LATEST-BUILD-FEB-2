@@ -34,9 +34,9 @@ if (!empty($name) || !empty($username) || !empty($email) || !empty($phone) || !e
             $stmt->bind_param("sssiss", $name, $username, $email, $phone, $password, $gender);
             $stmt->execute();
 
-            header('Location: /EZHOMECARE-LATEST-BUILD-FEB-2/index.html');
+            header('Location: /index.html');
         } else {
-            header('Location: /EZHOMECARE-LATEST-BUILD-FEB-2/index.html');
+            header('Location: /index.html');
         }
         $stmt->close();
         $conn->close();

@@ -13,12 +13,12 @@ if ($con->connect_error) {
     if ($stmt_result->num_rows > 0) {
         $data = $stmt_result->fetch_assoc();
         if ($data['password'] === $password) {
-            header('Location: /EZHOMECARE-LATEST-BUILD-FEB-2/Home.html');
+            header('Location: /Home.html');
         } else {
-            header('Location: /EZHOMECARE-LATEST-BUILD-FEB-2/Error.html');
+            header('Location: /Error.html');
         }
     } else {
-        header('Location: /EZHOMECARE-LATEST-BUILD-FEB-2/Error.html');
+        header('Location: /Error.html');
     }
 }
 ?>
