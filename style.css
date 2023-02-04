@@ -58,3 +58,11 @@ img:hover {
   margin-right: 3cm;
   text-align: center;
 }
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: start;
+}
