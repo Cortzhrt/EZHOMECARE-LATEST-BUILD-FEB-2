@@ -21,14 +21,13 @@
         alt="Company Logo"
       />
       <h1>Log In</h1>
-      <form>
+      <form action="Home.php" method="post">
         <label>Username :</label>
         <input
           type="text"
           placeholder="Enter Username"
           name="username"
           required
-          class="login_textbox"
         />
         <br /><br />
         <label>Password :</label>
@@ -37,17 +36,10 @@
           placeholder="Enter Password"
           name="password"
           required
-          class="login_textbox"
         />
+        <br /><br />
+        <input style="margin-bottom: 1em" type="submit" value="Login" />
       </form>
-      <br />
-      <a href="Home.html" class="btn btn-info" role="button"
-        ><button style="margin-bottom: 1em" type="submit">Login</button>
-      </a>
-      <br />
-      <input type="checkbox" checked="checked" class="login_textbox" />
-      Remember Me
-      <br /><br /><br />
     </div>
     <footer>
       <p>Copyright © 2023</p>

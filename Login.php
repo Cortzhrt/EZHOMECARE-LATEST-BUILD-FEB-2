@@ -7,9 +7,9 @@ $password = $_POST['password'];
 $gender = $_POST['gender'];
 
 if (!empty($name) || !empty($username) || !empty($email) || !empty($phone) || !empty($password) || !empty($gender)) {
-    $host = "sql201.epizy.com";
-    $dbUsername = "epiz_33500965";
-    $dbPassword = "eEEUyD4vlXJZ9d";
+    $host = "localhost";
+    $dbUsername = "root";
+    $dbPassword = "";
     $dbname = "epiz_33500965_ezhomecare";
 
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
@@ -29,13 +29,14 @@ if (!empty($name) || !empty($username) || !empty($email) || !empty($phone) || !e
 
         if ($rnum == 0) {
             $stmt->close();
-            
+
             $stmt = $conn->prepare($INSERT);
             $stmt->bind_param("sssiss", $name, $username, $email, $phone, $password, $gender);
             $stmt->execute();
-            echo "New record inserted successfully";
+
+            header('Location: /EZHOMECARE-LATEST-BUILD-FEB-2/index.html');
         } else {
-            echo "Someone already registered using this email";
+            header('Location: /EZHOMECARE-LATEST-BUILD-FEB-2/index.html');
         }
         $stmt->close();
         $conn->close();
