@@ -15,10 +15,10 @@ if ($con->connect_error) {
         if ($data['password'] === $password) {
             header('Location: /EZHOMECARE-LATEST-BUILD-FEB-2/Home.html');
         } else {
-            echo "<h2>Invalid Email or password. click the back button</h2>";
+            header('Location: /EZHOMECARE-LATEST-BUILD-FEB-2/Error.html');
         }
     } else {
-        echo "<h2>Invalid Email or password.click the back button</h2>";
+        header('Location: /EZHOMECARE-LATEST-BUILD-FEB-2/Error.html');
     }
 }
 ?>
